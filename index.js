@@ -8,6 +8,6 @@ getMarkdown()
   .then((data) => {
     
     let html = converter.makeHtml(data);
-    let cont = document.getElementById("readme").firstChild;
+    let cont = document.getElementById("readme").firstElementChild;
     cont.innerHTML = html;
 });
