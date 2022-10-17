@@ -1,7 +1,7 @@
 async function getMarkdown() {
   var md = fetch("/README.md")
-    .then((response) => response.text)
-  return md
+    .then((response) => response.text);
+  return await md
 }
 let converter = new showdown.Converter();
 getMarkdown().then((data) => {
