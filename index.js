@@ -4,7 +4,7 @@ function getMarkdown() {
 }
 let converter = new showdown.Converter();
 getMarkdown()
-  .then((response) => response.text);
+  .then((response) => response.text)
   .then((data) => {
     console.log(data)
     let html = converter.makeHtml(data);
