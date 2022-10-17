@@ -1,11 +1,12 @@
-async function getMarkdown() {
+function getMarkdown() {
   var md = fetch("/README.md")
-    .then((response) => response.text);
-  return await md
+  return md
 }
 let converter = new showdown.Converter();
-getMarkdown().then((data) => {
-  console.log(data)
-  let html = converter.makeHtml(data);
-  console.log(html)
+getMarkdown()
+  .then((response) => response.text);
+  .then((data) => {
+    console.log(data)
+    let html = converter.makeHtml(data);
+    console.log(html)
 });
