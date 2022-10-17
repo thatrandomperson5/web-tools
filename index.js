@@ -1,6 +1,6 @@
 let text = fetch("/README.md")
   .then((response) => response.text)
-  .then((data) => {
+  .finally((data) => {
     return data;
   });
 
