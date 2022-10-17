@@ -4,8 +4,7 @@ async function getMarkdown() {
     .finally((data) => {
       return data;
     });
-  md = await md;
-  return md;
+  return md.resolve();
 }
 let converter = new showdown.Converter(),  
     html = converter.makeHtml(getMarkdown());
