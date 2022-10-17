@@ -5,6 +5,7 @@ async function getMarkdown() {
 }
 let converter = new showdown.Converter();
 getMarkdown().then((data) => {
+  console.log(data)
   let html = converter.makeHtml(data);
   console.log(html)
 });
