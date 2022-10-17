@@ -1,5 +1,5 @@
 function getMarkdown() {
-  var md = fetch("/README.md");
+  var md = fetch("./README.md");
   return md;
 }
 let converter = new showdown.Converter();
