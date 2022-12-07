@@ -1,38 +1,33 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
   <head>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-     <style>
-       input {
-          width: 100%;
-        }
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <style>
+      input {
+        width: 100%;
+      }
     </style>
-    <script src="./index.js">
-      
-    </script>
+    <script src="./index.js"></script>
   </head>
 
   <body>
-    <h1>
-      NPEG range gen
-    </h1>
+    <h1>NPEG range gen</h1>
     <p>
-      <code>[chars, [val1, val2]]![not these]</code><br>
-      <code>[]</code>: Container, there should always be two, the second one is not include. You can put chars or ranges (below) inside<br>
-      <code>[[]]</code>: Range, equivalent to the npeg <code>{'a'..'z'}</code><br>
+      <code>[chars, [val1, val2]]![not these]</code><br />
+      <code>[]</code>: Container, there should always be two, the second one is
+      not include. You can put chars or ranges (below) inside<br />
+      <code>[[]]</code>: Range, equivalent to the npeg <code>{'a'..'z'}</code
+      ><br />
       Example: <code>[["A", "z"], "?"]![["[", "`"], "B"]</code>
     </p>
 
-    <input placeholder="Range syntax here" id="input">
-    <button onclick="convert(event)">
-      Convert
-    </button><br>
+    <input placeholder="Range syntax here" id="input" />
+    <button onclick="convert(event)">Convert</button><br />
     <pre>
     <code id="output">Output here</code>
     </pre>
-
-
   </body>
-
 </html>
