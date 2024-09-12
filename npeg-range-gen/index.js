@@ -11,7 +11,7 @@ function allChars(lst) {
     let item = lst[i];
     if (item instanceof Array) {
       let itemNum = [item[0].codePointAt(0), item[1].codePointAt(0)].sort(
-        (a, b) => a - b
+        (a, b) => a - b,
       );
 
       let irange = range(itemNum[0], itemNum[1] + 1);
